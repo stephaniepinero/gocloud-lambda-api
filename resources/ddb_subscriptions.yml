@@ -1,0 +1,18 @@
+Resources:
+  UserBankBalancePending:
+    Type: AWS::DynamoDB::Table
+      # DeletionPolicy: Retain
+    Properties:
+      TableName: subscriptions
+      AttributeDefinitions:
+        - AttributeName: subscriptionId
+          AttributeType: S
+        - AttributeName: SK
+          AttributeType: S
+      KeySchema:
+        - AttributeName: subscriptionId
+          KeyType: HASH
+        - AttributeName: SK
+          KeyType: RANGE
+      BillingMode: PAY_PER_REQUEST
+  

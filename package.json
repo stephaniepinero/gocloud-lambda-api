@@ -10,7 +10,7 @@
   "author": "Stephanie Piñero",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.701.0",
+    "aws-sdk": "^2.814.0",
     "chileanrutvalidator": "^1.0.5"
   },
   "devDependencies": {
